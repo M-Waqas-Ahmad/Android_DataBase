@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNewStudent">
+
+    <TextView
+        android:id="@+id/tvAddStudentTittle"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="Add New Student "
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_purple"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <EditText
+        android:id="@+id/etStdRno"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Enter Roll Number"
+        android:inputType="text"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvAddStudentTittle"/>
+
+    <EditText
+        android:id="@+id/etStdName"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Enter Name"
+        android:inputType="text"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etStdRno"/>
+
+    <EditText
+        android:id="@+id/etStdFatherName"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Enter Father Name"
+        android:inputType="text"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etStdName"/>
+    <EditText
+        android:id="@+id/etStdTotalFee"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Enter Total Fee"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etStdFatherName"/>
+
+    <Button
+        android:id="@+id/btnAddStudentRecord"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:text="Add Student"
+        android:background="@android:color/holo_purple"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etStdTotalFee"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

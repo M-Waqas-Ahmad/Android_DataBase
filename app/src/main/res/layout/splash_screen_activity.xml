@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
+    tools:context=".SplashScreen">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_guid_line_ten_percent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_guid_line_thirty_percent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintGuide_percent="0.6"
+        android:orientation="horizontal"
+        android:id="@+id/horizontal_guid_line_sixty_percent"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_guid_line_ninety_percent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintGuide_percent="0.05"
+        android:orientation="vertical"
+        android:id="@+id/vertical_guid_line_five_percent"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintGuide_percent="0.95"
+        android:orientation="vertical"
+        android:id="@+id/vertical_guid_line_ninety_five_percent"/>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_guid_line_ten_percent"
+        app:layout_constraintBottom_toTopOf="@id/horizontal_guid_line_thirty_percent"
+        app:layout_constraintStart_toEndOf="@id/vertical_guid_line_five_percent"
+        app:layout_constraintEnd_toStartOf="@id/vertical_guid_line_ninety_five_percent"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/ivLogoSplashScreen"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/logo"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvTitleSplashScreen"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/vertical_guid_line_five_percent"
+        app:layout_constraintEnd_toStartOf="@id/vertical_guid_line_ninety_five_percent"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_guid_line_sixty_percent"
+        app:layout_constraintBottom_toTopOf="@id/horizontal_guid_line_ninety_percent"
+        android:gravity="center"
+        android:text="SCHOOL MANAGEMENT APP"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
